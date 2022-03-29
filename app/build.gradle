@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -56,5 +58,7 @@ dependencies {
 
     implementation "com.google.dagger:hilt-android:2.41"
     kapt "com.google.dagger:hilt-compiler:2.38.1"
+
+    implementation "androidx.cardview:cardview:1.0.0"
 
 }

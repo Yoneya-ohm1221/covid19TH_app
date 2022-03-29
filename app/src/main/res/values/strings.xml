@@ -2,4 +2,12 @@
     <string name="app_name">Covid19TH</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sortedBy">
+        <item>จังหวัด</item>
+        <item>ผู้ตืดเชื้อใหม่</item>
+        <item>ผู้เสียชีวิตใหม่</item>
+        <item>ผู้ติดเชื้อสะสม</item>
+    </string-array>
+
 </resources>

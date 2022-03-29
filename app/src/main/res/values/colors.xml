@@ -11,6 +11,8 @@
 
     <color name="total_case">#03A9F4</color>
     <color name="new_case">#DC0000</color>
-    <color name="new_death">#0B0B0B</color>
+    <color name="new_death">#757575</color>
     <color name="total_death">#292929</color>
+    <color name="excludeabroad">#B1A00B</color>
+    <color name="recovered">#11BC18</color>
 </resources>

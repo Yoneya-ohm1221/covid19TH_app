@@ -9,10 +9,23 @@
         android:id="@+id/homeFragment"
         android:name="com.example.covid19th.Ui.Fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailProvinceFragment"
+            app:destination="@id/detailProvinceFragment" />
+    </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.covid19th.Ui.Fragment.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/detailProvinceFragment"
+        android:name="com.example.covid19th.Ui.Fragment.DetailProvinceFragment"
+        android:label="fragment_detail_province"
+        tools:layout="@layout/fragment_detail_province" >
+        <argument
+            android:name="covid"
+            app:argType="com.example.covid19th.model.Covid" />
+    </fragment>
 </navigation>

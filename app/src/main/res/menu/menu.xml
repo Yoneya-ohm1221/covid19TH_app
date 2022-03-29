@@ -4,12 +4,12 @@
 
     <group >
         <item
-            android:icon="@drawable/ic_android_black_24dp"
+            android:icon="@drawable/ic_baseline_home_24"
             android:id="@+id/homeFragment"
-            android:title="Home" />
+            android:title="หน้าแรก" />
         <item
-            android:icon="@drawable/ic_android_black_24dp"
+            android:icon="@drawable/ic_baseline_history_24"
             android:id="@+id/historyFragment"
-            android:title="History" />
+            android:title="สรุป" />
     </group>
 </menu>

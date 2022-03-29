@@ -10,17 +10,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txtprovinceD"
+        <ImageView
+            android:id="@+id/imgback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Covid-19 Today"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtprovinceD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="กรุงเทพมหานคร"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgback"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -57,7 +67,7 @@
                 android:background="@color/new_case">
 
                 <TextView
-                    android:id="@+id/txtnewcaseAll"
+                    android:id="@+id/txtnewcaseDetail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -110,7 +120,7 @@
                 tools:layout_editor_absoluteY="154dp">
 
                 <TextView
-                    android:id="@+id/txttotalAll"
+                    android:id="@+id/txttotalDetail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -148,11 +158,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="16dp"
             android:outlineSpotShadowColor="@color/black"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
-            app:layout_constraintEnd_toStartOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
@@ -166,7 +176,7 @@
                 tools:layout_editor_absoluteY="154dp">
 
                 <TextView
-                    android:id="@+id/txtdeadAll"
+                    android:id="@+id/txtdeadDetail"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -183,7 +193,7 @@
                     tools:layout_conversion_absoluteWidth="68dp" />
 
                 <TextView
-                    android:id="@+id/txttotalDeadAll"
+                    android:id="@+id/txttotalDeadDetail"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -229,7 +239,7 @@
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtdeadAll"
+                    app:layout_constraintTop_toBottomOf="@+id/txtdeadDetail"
                     tools:layout_conversion_absoluteHeight="19dp"
                     tools:layout_conversion_absoluteWidth="78dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -286,99 +296,6 @@
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="19dp"
-                    tools:layout_conversion_absoluteWidth="78dp" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:outlineSpotShadowColor="@color/black"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/cardView4"
-            app:layout_constraintTop_toBottomOf="@+id/cardView3">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/recovered"
-                tools:layout_conversion_absoluteHeight="80dp"
-                tools:layout_conversion_absoluteWidth="347dp"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="154dp">
-
-                <TextView
-                    android:id="@+id/txtrecoveredAll"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="+120"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView31"
-                    tools:layout_conversion_absoluteHeight="40dp"
-                    tools:layout_conversion_absoluteWidth="68dp" />
-
-                <TextView
-                    android:id="@+id/txttotalrecoveredAll"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="+120"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView29"
-                    tools:layout_conversion_absoluteHeight="40dp"
-                    tools:layout_conversion_absoluteWidth="68dp" />
-
-                <TextView
-                    android:id="@+id/textView31"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
-                    android:text="หายป่วยวันนี้"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="19dp"
-                    tools:layout_conversion_absoluteWidth="78dp" />
-
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
-                    android:text="หายป่วยสะสม"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtrecoveredAll"
                     tools:layout_conversion_absoluteHeight="19dp"
                     tools:layout_conversion_absoluteWidth="78dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,11 @@
 package com.example.covid19th.model
 
+import android.os.Parcelable
+import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Covid(
     @SerializedName("update_date")
     var update_date: String,
@@ -19,4 +23,4 @@ data class Covid(
     var new_death:String,
     @SerializedName("total_death")
     var total_death:String,
-)
+) : Parcelable
